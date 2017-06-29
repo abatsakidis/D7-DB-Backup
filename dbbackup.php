@@ -10,11 +10,17 @@
 
 $password = "123"; //Change to whatever you want your password to be
 
+$VER_DIR = dirname(__FILE__). "/includes/";
+include($VER_DIR. "bootstrap.inc"); 
+
+$changelog = "CHANGELOG.txt";
+
+$lines = file($changelog);
+
 if(isset($_POST['submit'])){
         if($_POST['password'] == $password){
         		
 			$INC_DIR = dirname(__FILE__). "/sites/default/";
-
 			include($INC_DIR. "settings.php"); 
 
 			$DBUSER=$databases['default']['default']['username'];
@@ -42,6 +48,12 @@ else
 {
 	//IF THE FORM WAS NOT SUBMITTED - SHOW FORM
         ?><form method="post">
+		         <?php 
+		               echo "PHP Database Backup Script For Drupal 7"."<br>"; 
+			           echo "Copyright (c) 2017"."<br><br>"; 
+					   echo "Drupal Version: <strong>" . $lines[1]."</strong><br><br>";
+			     ?>
+				  
                  Password: <input type="password" name="password" />
                 <input type='submit' name='submit' />
         </form><?php
