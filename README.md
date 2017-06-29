@@ -1,6 +1,6 @@
 ## Description
 
-Drupal 7 Database PHP Script - Version 1.0
+Drupal 7 Backup Database PHP Script - Version 1.0
 
 ## How to run it
 
