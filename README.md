@@ -1,4 +1,3 @@
-[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/version)](https://packagist.org/packages/phpunit/phpunit)
 [![License](https://poser.pugx.org/okwinza/cloudflare-api/license)](https://packagist.org/packages/okwinza/cloudflare-api)
 
 ## Description
