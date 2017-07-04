@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/version)](https://packagist.org/packages/phpunit/phpunit)
+
 ## Description
 
 Drupal 7 Backup Database PHP Script - Version 1.0
